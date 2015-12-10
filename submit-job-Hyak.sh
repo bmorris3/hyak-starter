@@ -35,7 +35,8 @@
 ## --------------------------------------------------------
 ## NUMBER nodes, CPUs per node, and MEMORY
 ## --------------------------------------------------------
-#PBS -l nodes=1:ppn=16,mem=12gb,feature=intel
+#PBS -l nodes=1:ppn=16,feature=16core,mem=12gb
+## PBS -l nodes=1:ppn=16,mem=12gb,feature=intel
 ## PBS -l nodes=2:ppn=16,mem=120gb,feature=intel
 ## PBS -l nodes=4:ppn=16,mem=250gb,feature=intel
 ## PBS -l nodes=8:ppn=16,mem=510gb,feature=intel
