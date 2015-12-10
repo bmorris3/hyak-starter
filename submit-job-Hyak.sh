@@ -69,8 +69,8 @@
 ## --------------------------------------------------------
 ## LOAD any appropriate environment modules and variables
 ## --------------------------------------------------------
-module load git_2.4.4
-module load icc_16.0.1-ompi_1.8.8
+## module load git_2.4.4
+## module load icc_16.0.1-ompi_1.8.8
 
 
 ## --------------------------------------------------------
@@ -101,7 +101,7 @@ cd $PBS_O_WORKDIR
 ## SPECIFY some input variables
 #myInputFile1="run-case-1"
 #myInputFile2="run-case-2"
-executableFile = "/usr/lusers/bmmorris/git/hyak-starter/line.py"
+#executableFile = "/usr/lusers/bmmorris/git/hyak-starter/line.py"
 
 ## KEEP copy of the initial cleared solution (small file size), 
 ## and RENAME file used for restart after CHECKPOINTING (this file gets big) 
@@ -109,6 +109,6 @@ executableFile = "/usr/lusers/bmmorris/git/hyak-starter/line.py"
 
 ## RUN my simulation file in BATCH MODE (and make a log file!)
 #./my-cool-code myInputFile1 2>&1 |tee log.$myInputFile1
-python $executableFile
+python /usr/lusers/bmmorris/git/hyak-starter/line.py
 
 
