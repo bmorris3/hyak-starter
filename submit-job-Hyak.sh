@@ -28,9 +28,9 @@
 ## GROUP to run under, or run under BACKFILL
 ## --------------------------------------------------------
 ## PBS -q bf
-#PBS -W group_list=hyak-stf
+## PBS -W group_list=hyak-stf
 ## PBS -W group_list=hyak-secretgroup
-
+#PBS -q bf
 
 ## --------------------------------------------------------
 ## NUMBER nodes, CPUs per node, and MEMORY
